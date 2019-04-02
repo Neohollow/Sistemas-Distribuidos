@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="825c1d98-2b46-407b-b189-61a869e1c9fe" name="Default Changelist" comment="" />
+    <list default="true" id="825c1d98-2b46-407b-b189-61a869e1c9fe" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/practica3.py" beforeDir="false" afterPath="$PROJECT_DIR$/practica3.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,8 +15,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/practica3.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret selection-end-column="29" />
+            <state relative-caret-position="225">
+              <caret line="15" column="80" selection-start-line="15" selection-start-column="80" selection-end-line="15" selection-end-column="80" />
               <folding>
                 <element signature="e#0#29#0" expanded="true" />
               </folding>
@@ -40,11 +42,14 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/practica3.py" />
         <option value="$PROJECT_DIR$/kernel.py" />
+        <option value="$PROJECT_DIR$/practica3.py" />
       </list>
     </option>
   </component>
@@ -53,6 +58,7 @@
     <option name="width" value="1270" />
     <option name="height" value="693" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -73,6 +79,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RunDashboard">
@@ -180,8 +187,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/practica3.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-column="29" />
+        <state relative-caret-position="225">
+          <caret line="15" column="80" selection-start-line="15" selection-start-column="80" selection-end-line="15" selection-end-column="80" />
           <folding>
             <element signature="e#0#29#0" expanded="true" />
           </folding>

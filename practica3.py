@@ -13,7 +13,7 @@ lListaPrecios = [] #Precios del juego indicado.
 for precio in precios:
         sTexto = precio.span.text #Obtenemos el precio dentro de la etiqueta span
         fPrecioFlotante = float(sTexto.join(sTexto.split()).replace("€", ""))
-        lListaPrecios.append(fPrecioFlotante)# Añadimos los precios en la lista
+        lListaPrecios.append(fPrecioFlotante)# Añadimos los precios en la lista 
 
 
 
