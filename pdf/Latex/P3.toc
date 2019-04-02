@@ -1,0 +1,16 @@
+\babel@toc {spanish}{}
+\contentsline {section}{\numberline {1}Tecnolog\IeC {\'\i }as empleadas.}{3}{section.1}
+\contentsline {subsection}{\numberline {1.1}Python}{3}{subsection.1.1}
+\contentsline {subsection}{\numberline {1.2}Twitter}{3}{subsection.1.2}
+\contentsline {subsection}{\numberline {1.3}Drive}{3}{subsection.1.3}
+\contentsline {subsection}{\numberline {1.4}Rabbitmq }{3}{subsection.1.4}
+\contentsline {subsection}{\numberline {1.5}SMPT}{3}{subsection.1.5}
+\contentsline {section}{\numberline {2}Descripci\IeC {\'o}n del flujo y funcionamiento}{4}{section.2}
+\contentsline {subsection}{\numberline {2.1}Recolecci\IeC {\'o}n de datos}{4}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.2}Tratado de los datos}{4}{subsection.2.2}
+\contentsline {subsection}{\numberline {2.3}Subida a Drive}{4}{subsection.2.3}
+\contentsline {subsection}{\numberline {2.4}Comparaci\IeC {\'o}n de valores e impresi\IeC {\'o}n}{4}{subsection.2.4}
+\contentsline {subsection}{\numberline {2.5}Dibujo de gr\IeC {\'a}fica mediante ...}{4}{subsection.2.5}
+\contentsline {section}{\numberline {3}Demostraci\IeC {\'o}n de funcionamiento}{5}{section.3}
+\contentsline {section}{\numberline {4}Referencias}{6}{section.4}
+\contentsline {section}{\numberline {5}Valoraciones}{7}{section.5}
