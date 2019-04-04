@@ -1,9 +1,8 @@
 from bs4 import BeautifulSoup
-from kernel import match_class
 import requests
 
 
-result = requests.get("https://www.allkeyshop.com/blog/buy-sekiro-shadows-die-twice-cd-key-compare-prices/")
+result = requests.get("https://www.allkeyshop.com/blog/buy-call-of-duty-black-ops-4-cd-key-compare-prices/")
 c = result.content
 parseador = BeautifulSoup(c, 'html5lib')
 precios = parseador.findAll(match_class(["price"]))
