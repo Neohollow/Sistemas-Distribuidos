@@ -1,0 +1,145 @@
+%%\documentclass[a4paper,12pt,oneside]{llncs}
+\documentclass[12pt,letterpaper]{article}
+\usepackage[right=2cm,left=3cm,top=2cm,bottom=2cm,headsep=0cm]{geometry}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Juego de caracteres usado en el archivo fuente: UTF-8
+\usepackage{ucs}
+\usepackage[utf8x]{inputenc}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Juego de caracteres usado en la salida dvi
+%% Otra posibilidad: \usepackage{t1enc}
+\usepackage[T1]{fontenc}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Ajusta maergenes para a4
+%\usepackage{a4wide}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Uso fuente postscript times, para que los ps y pdf queden y pequeños...
+\usepackage{times}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Posibilidad de hipertexto (especialmente en pdf)
+%\usepackage{hyperref}
+\usepackage[bookmarks = true, colorlinks=true, linkcolor = black, citecolor = black, menucolor = black, urlcolor = black]{hyperref}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Graficos 
+\usepackage{graphics,graphicx}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Ciertos caracteres "raros"...
+\usepackage{latexsym}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Matematicas aun más fuertes (american math dociety)
+\usepackage{amsmath}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{multirow} % para las tablas
+\usepackage[spanish,es-tabla]{babel}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Fuentes matematicas lo mas compatibles posibles con postscript (times)
+%% (Esto no funciona para todos los simbolos pero reduce mucho el tamaño del
+%% pdf si hay muchas matamaticas....
+\usepackage{mathptm}
+
+%%% VARIOS:
+\usepackage{slashbox}
+\usepackage{verbatim}
+\usepackage{array}
+\usepackage{listings}
+\usepackage{multirow}
+
+%% MARCA DE AGUA
+%% Este package de "draft copy" NO funciona con pdflatex
+%%\usepackage{draftcopy}
+%% Este package de "draft copy" SI funciona con pdflatex
+%%%\usepackage{pdfdraftcopy}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Indenteacion en español...
+\usepackage[spanish]{babel}
+
+\usepackage{listings}
+% Para escribir código en C
+% \begin{lstlisting}[language=C]
+% #include <stdio.h>
+% int main(int argc, char* argv[]) {
+% puts("Hola mundo!");
+% }
+% \end{lstlisting}
+
+
+\title{Grado en Ingeniería Informática\\Sistemas Distribuidos\\Práctica 3}
+\author{José Manuel Morales García \\ José Joaquín Pérez-Calderón Ortiz}
+
+\begin{document}
+	\maketitle
+	\begin{center}
+		\includegraphics[scale=0.22]{C:/Users/trico/Desktop/sd/P3/Imagenes/uca}
+	\end{center}
+	
+	\thispagestyle{empty}
+	\newpage
+	\tableofcontents
+	\newpage
+	
+	%%\listoftables
+	%%\newpage
+	
+	%%\listoffigures
+	%%\newpage
+	
+	%%%% REAL WORK BEGINS HERE:
+	
+	%%Configuracion del paquete listings
+	\lstset{language=bash, numbers=left, numberstyle=\tiny, numbersep=10pt, firstnumber=1, stepnumber=1}
+		\section{Tecnologías empleadas.}
+			Estamos empleando Python 3
+			Nosotros hemos decidido emplear las siguientes tecnologías.(Explicación de dado que nuestro proyecto bla bla bla)
+			\subsection{Python}
+			\subsection{Twitter}
+			\subsection{Drive}
+			\subsection{Rabbitmq }
+			\subsection{SMPT}
+		\newpage	
+		\section{Descripción del flujo y funcionamiento}
+			\subsection{Recolección de datos}
+			\subsection{Tratado de los datos}
+			\subsection{Subida a Drive}
+			\subsection{Comparación de valores e impresión}
+			\subsection{Dibujo de gráfica mediante ...}
+		\newpage	
+		\section{Demostración de funcionamiento}
+		\newpage
+		\section{Referencias}
+			\begin{itemize}
+				\item Python 3\\→ https://docs.python.org/3/tutorial/
+				\item Beautifulsoup:\\→ https://www.crummy.com/software/BeautifulSoup/bs4/doc/\\
+				\item Requests: \\→ http://docs.python-requests.org/en/master/
+				\item 4\\→
+				\item 5\\→
+				\item 6\\→
+				\item 7\\→
+			\end{itemize}
+		\newpage
+		\section{Valoraciones}
+			\begin{table}[htp]
+				\resizebox{17cm}{!}{
+					\begin{tabular}{|l|c|c|c|c|}
+						\hline
+						\textbf{Concepto}                                                        & \multicolumn{1}{l|}{\textbf{Aprobado}}                                    & \multicolumn{1}{l|}{\textbf{Notable}}                                                      & \multicolumn{1}{l|}{\textbf{Sobresaliente}}                              & \textbf{Porcentaje \%} \\ \hline
+						\textbf{Tecnologías usadas}                                              & Dos                                                                       & Tres                                                                                       & Cuatro o más                                                             & 30\%                   \\ \hline
+						\textbf{Almacenamiento}                                                  & No controla errores                                                       & Algún control o no asíncrono                                                               & \begin{tabular}[c]{@{}c@{}}Control de errores y\\ asíncrono\end{tabular} & 10\%                   \\ \hline
+						\textbf{\begin{tabular}[c]{@{}l@{}}Peticiones\\ asíncronas\end{tabular}} & Alguna                                                                    & Varios con algún error                                                                     & Varias y sin errores                                                     & 10\%                   \\ \hline
+						\textbf{\begin{tabular}[c]{@{}l@{}}Procesamiento\\ salida\end{tabular}}  & Apenas procesamiento                                                      & Procesamiento medio                                                                        & Procesamiento interesante                                                & 10\%                   \\ \hline
+						\textbf{Dificultad}                                                      & Demasiado fácil                                                           & Complejidad algo baja                                                                      & Suficientemente complejo                                                 & 15\%                   \\ \hline
+						\textbf{Escalabilidad}                                                   & \begin{tabular}[c]{@{}c@{}}Escala muy básica o con\\ errores\end{tabular} & \begin{tabular}[c]{@{}c@{}}Escala con limitaciones\\ (no en lo importante)\end{tabular}    & Escala bien                                                              & 15\%                   \\ \hline
+						\textbf{Documentación}                                                   & Falta funcionalidad, dudas                                                & \begin{tabular}[c]{@{}c@{}}Bien la funcionalidad\\ mejorable la documentación\end{tabular} & Bien ambos conceptos                                                     & 10\%                   \\ \hline
+					\end{tabular}
+				}
+			\end{table}
+\end{document}
