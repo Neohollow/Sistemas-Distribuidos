@@ -1,2 +1,2 @@
 from controller.kernel import *
-from controller.practica3 import *
+from controller.Server import *
