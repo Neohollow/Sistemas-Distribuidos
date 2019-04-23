@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2018.11.1)  2 APR 2019 20:12
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2018.11.1)  23 APR 2019 19:01
 entering extended mode
 **./P3.tex
 (P3.tex
@@ -606,16 +606,18 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 81.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 81.
-<C:/Users/trico/Desktop/sd/P3/Imagenes/uca.png, id=63, 597.432pt x 793.0428pt>
-File: C:/Users/trico/Desktop/sd/P3/Imagenes/uca.png Graphic file (type png)
-<use C:/Users/trico/Desktop/sd/P3/Imagenes/uca.png>
-Package pdftex.def Info: C:/Users/trico/Desktop/sd/P3/Imagenes/uca.png  used on
- input line 82.
+<D:/Neohollow/UNI/sd/P3/Sistemas-Distribuidos/pdf/Imagenes/uca.png, id=63, 597.
+432pt x 793.0428pt>
+File: D:/Neohollow/UNI/sd/P3/Sistemas-Distribuidos/pdf/Imagenes/uca.png Graphic
+ file (type png)
+<use D:/Neohollow/UNI/sd/P3/Sistemas-Distribuidos/pdf/Imagenes/uca.png>
+Package pdftex.def Info: D:/Neohollow/UNI/sd/P3/Sistemas-Distribuidos/pdf/Image
+nes/uca.png  used on input line 82.
 (pdftex.def)             Requested size: 131.43544pt x 174.46996pt.
 [1
 
-{C:/Users/trico/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <C:/Users/tr
-ico/Desktop/sd/P3/Imagenes/uca.png>]
+{C:/Users/trico/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <D:/Neohollo
+w/UNI/sd/P3/Sistemas-Distribuidos/pdf/Imagenes/uca.png>]
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <17.28> not available
 (Font)              Font shape `T1/ptm/b/n' tried instead on input line 87.
  (P3.toc
@@ -642,53 +644,72 @@ File: lstlang1.sty 2018/09/02 1.7 listings language file
 sty"
 File: lstlang1.sty 2018/09/02 1.7 listings language file
 )
-Overfull \hbox (36.6765pt too wide) in paragraph at lines 101--103
-[]\T1/ptm/m/n/12 Estamos em-plean-do Pyt-hon 3 No-so-tros he-mos de-ci-di-do em
--plear las si-guien-tes tec-no-lo-gías.(Explicación
+Underfull \hbox (badness 10000) in paragraph at lines 101--102
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 103--104
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 105--106
+
  []
 
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <14.4> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 103.
-[3] [4] [5]
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 108.
+
+Underfull \hbox (badness 10000) in paragraph at lines 109--110
+
+ []
+
+[3]
+Underfull \hbox (badness 10000) in paragraph at lines 124--125
+
+ []
+
+[4] [5]
 ("C:\Users\trico\AppData\Local\Programs\MiKTeX 2.9\tex\latex\ucs\uni-33.def"
 File: uni-33.def 2013/05/13 UCS: Unicode data U+2100..U+21FF
 )
-Underfull \hbox (badness 10000) in paragraph at lines 121--122
+Underfull \hbox (badness 10000) in paragraph at lines 139--140
 
  []
 
 [6]
-Overfull \hbox (11.6787pt too wide) in paragraph at lines 131--144
+Overfull \hbox (11.6787pt too wide) in paragraph at lines 149--162
 [][] 
  []
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 145.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 163.
 [7]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 145.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 163.
  (P3.aux
 LaTeX Info: Redefining \. on input line 23.
 LaTeX Info: Redefining \% on input line 23.
 )
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 145.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 145.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 163.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 163.
 Package rerunfilecheck Info: File `P3.out' has not changed.
-(rerunfilecheck)             Checksum: F799E8A26693403CC2EE63A185F68A14;969.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 145.
+(rerunfilecheck)             Checksum: 77A3CFBABE7AB825C7C51403AB191F84;970.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 163.
  ) 
 Here is how much of TeX's memory you used:
- 9829 strings out of 492970
- 142608 string characters out of 3126594
+ 9838 strings out of 492970
+ 142965 string characters out of 3126594
  437239 words of memory out of 3000000
- 13512 multiletter control sequences out of 15000+200000
+ 13521 multiletter control sequences out of 15000+200000
  41044 words of font info for 74 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 32i,15n,49p,372b,596s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 32i,15n,49p,489b,596s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Users/trico/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc
 }<C:/Users/trico/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/
 cm/cmsy10.pfb><C:/Users/trico/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw
 /times/utmb8a.pfb><C:/Users/trico/AppData/Local/Programs/MiKTeX 2.9/fonts/type1
 /urw/times/utmr8a.pfb>
-Output written on P3.pdf (7 pages, 1085544 bytes).
+Output written on P3.pdf (7 pages, 1088870 bytes).
 PDF statistics:
  132 PDF objects out of 1000 (max. 8388607)
  24 named destinations out of 1000 (max. 500000)

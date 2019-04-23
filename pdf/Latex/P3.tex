@@ -79,7 +79,7 @@
 \begin{document}
 	\maketitle
 	\begin{center}
-		\includegraphics[scale=0.22]{C:/Users/trico/Desktop/sd/P3/Imagenes/uca}
+		\includegraphics[scale=0.22]{D:/Neohollow/UNI/sd/P3/Sistemas-Distribuidos/pdf/Imagenes/uca}
 	\end{center}
 	
 	\thispagestyle{empty}
@@ -98,20 +98,38 @@
 	%%Configuracion del paquete listings
 	\lstset{language=bash, numbers=left, numberstyle=\tiny, numbersep=10pt, firstnumber=1, stepnumber=1}
 		\section{Tecnologías empleadas.}
-			Estamos empleando Python 3
-			Nosotros hemos decidido emplear las siguientes tecnologías.(Explicación de dado que nuestro proyecto bla bla bla)
-			\subsection{Python}
+			Debido a la naturaleza de nuestro proyecto teníamos varias opciones para realizarlo, pero vamos a elegir las siguientes basándonos en el funcionamiento mas óptimo que hemos considerado. Nuestro proyecto consiste en un  cliente-servidor de scraping el cual estara constantemente actualizando los valores de precio de la página all key shop para obtener el mejor precio disponible para una serie de juegos, hemos tomado unos pocos en consideracion.\\
+			 
+			\noindent El sistema es escalable en cuanto a datos se refiere, ya que se pueden añadir más juegos y será el cliente quien filtre que juegos desea seguir.\\
+			
+			\noindent Para que el cliente pueda recibir notificaciones deberá introducir su correo o Id de Twitter \#nombre.\\
+			
+			\noindent Debido a lo cual hemos decidido emplear las siguientes tecnologías:
+			\subsection{Python 3}
+				Es lo mejor para el proyecto ya que se han actualizado las bibliotecas añadiendo funcionalidades nuevas al lenguaje, así mismo es la versión mas reciente y a raíz del 2020, la única que seguirá estando reconocida por ello permitirá la expansión del propio proyecto de cara al futuro.\\
 			\subsection{Twitter}
+				Para recibir la información de una forma mas pública para que todas aquellas personas que siguen a ese usuario puedan ver la noticia, por si es de su interés.
 			\subsection{Drive}
-			\subsection{Rabbitmq }
+				Empleado para el almacenamiento de datos en la nube, para que el fichero que el cliente obtiene usualmente no este vacío y tenga que rellenarse, Drive nos permite un acceso más rápido y gracias a la U.C.A. el tamaño que tenemos en el mismo es ilimitado.
+			\subsection{Rabbitmq}
+				Nos permite tener acceso a una cola de mensajes, para que el usuario pueda enviar los juegos que quiere y modificar los precios de los juegos.
 			\subsection{SMPT}
+				Correo para recibir de forma mas privada los datos sobre que juegos estas rastreando.
 		\newpage	
 		\section{Descripción del flujo y funcionamiento}
+			En un principio el Cliente deberá notificar al servidor que juegos desea rastrear con un precio máximo de una lista, así como su correo o cuenta de twitter, tras esto el servidor descargará el precio de los juegos e inicializará el scrapeo.
 			\subsection{Recolección de datos}
+				Para la recolección de datos el servidor se conecta a los juegos alojados en all key shop, descargará el html de la página y mediante las etiquetas buscaremos el precio más bajo de dicha página. En caso de que el precio haya variado se añadirá a la lista de precios.
 			\subsection{Tratado de los datos}
+				Para poder tomar los precios de dicho html buscaremos mediante Python la etiqueta <Nombre de la etiqueta> y cogeremos el campo <Nombre del campo> el cual contiene el precio del juego en las distintas páginas.\\
+				
+				Esto nos dejará con una ristra de precios del juego, pero solo nos fijaremos en el más barato independientemente de la página en la que esté.
 			\subsection{Subida a Drive}
+				El fichero se subirá a Drive siempre y cuando haya algun precio que se haya modificado. En caso de que el precio no haya variado pero si la página que lo vende tampoco será actualizado ya que el cliente busca el cambio del precio y no la página que lo esta distribuyendo. 
 			\subsection{Comparación de valores e impresión}
+				El Servidor estará comprobando el ultimo precio guardado y el precio mas bajo actual, en caso de que este haya variado el archivo será modificado, pero solo sera notificado o impreso cuando susodicho precio sea menor que el especificado por el usuario.
 			\subsection{Dibujo de gráfica mediante ...}
+				La impresión de la gráfica se realizara con ... el cual tomará el archivo de Drive con los últimos precios mas bajos dado para un juego y realizara una gráfica con dichos precios.
 		\newpage	
 		\section{Demostración de funcionamiento}
 		\newpage
