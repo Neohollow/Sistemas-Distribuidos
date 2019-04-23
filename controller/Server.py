@@ -4,6 +4,9 @@ from controller.kernel import openfile
 from bs4 import BeautifulSoup
 import requests
 from controller.kernel import match_class
+from controller.kernel import removefile
+from controller.kernel import fileexist
+import matplotlib.pyplot as plt
 
 
 class Server:
@@ -29,6 +32,9 @@ class Server:
         oConexion.close()
 
     def ListaDeJuegos(self):
+        exists = fileexist('records.txt')
+        if exists:
+            removefile("records.txt")
         archivo = openfile("records.txt", "a+")
         for key, value in self.listaJuegos.items():
             name = key
@@ -51,9 +57,17 @@ class Server:
                 archivo.seek(pos)
                 # Añadimos los precios en la lista
                 lListaPrecios.append(fPrecioFlotante)
+
             archivo.write("\n")
             pos = archivo.tell()
             archivo.seek(pos)
+            lListaPrecios.reverse()
+            plt.plot(lListaPrecios)
+            plt.ylabel('Precios')
+            try:
+                plt.savefig("imagen.png", 1)
+            except:
+                print("Python file saved")
 
 
 def main():

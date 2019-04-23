@@ -12,7 +12,17 @@ def openfile(nombre, accionWorR):
     f = open(nombre, accionWorR)
     return f
 
+
 def archivovacio(nombre):
     return os.path.getsize(nombre) == 0
 
+
+#Eliminamos el fichero.
+def removefile(strfile):
+    os.remove(strfile)
+
+
+#Comprobamos si existe el fichero.
+def fileexist(strfile):
+    return os.path.isfile(strfile)
 
