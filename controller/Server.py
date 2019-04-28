@@ -73,7 +73,7 @@ class Server:
 def main():
     principal = Server()
     #Descarga en el fichero los juegos scrapeados
-    principal.ListaDeJuegos()
+
     cnx = principal.conexion("localhost")
     channel = cnx.channel()
     channel.queue_declare(queue='payload')
