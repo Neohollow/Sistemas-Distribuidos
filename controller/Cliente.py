@@ -31,14 +31,10 @@ def change_dropdown(*args):
     connection = pika.BlockingConnection(
         pika.ConnectionParameters(host='localhost'))
     channel = connection.channel()
-
     channel.queue_declare(queue='payload')
-
     channel.basic_publish(exchange='', routing_key='payload', body=sjuego)
 
 
 # link function to change dropdown
 tkvar.trace('w', change_dropdown)
-
-
 top.mainloop()

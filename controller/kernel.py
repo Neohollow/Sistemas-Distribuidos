@@ -13,6 +13,7 @@ def openfile(nombre, accionWorR):
     return f
 
 
+# Comprobamos si el archivo pasado es vacío o no.
 def archivovacio(nombre):
     return os.path.getsize(nombre) == 0
 
