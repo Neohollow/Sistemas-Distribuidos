@@ -1,11 +1,10 @@
 import pika
-import sys
-from controller.kernel import openfile
 from bs4 import BeautifulSoup
 import requests
 from controller.kernel import match_class
 from controller.kernel import removefile
 from controller.kernel import fileexist
+from controller.kernel import uploadfile
 import matplotlib.pyplot as plt
 
 
@@ -14,6 +13,7 @@ class Server:
     sservidor = ""
     listaJuegos = {}
 
+    # Inicializacion de las variables del servidor
     def __init__(self):
         self.sservidor = "localhost"
         self.listaJuegos = {'vampire Bloodline 2': 'https://www.allkeyshop.com/blog/buy-vampire-the-masquerade-bloodlines-2-cd-key-compare-prices/',
@@ -36,7 +36,7 @@ class Server:
         exists = fileexist(nombrejuego+'.txt')
         if exists:
             removefile(nombrejuego+".txt")
-        archivo = openfile(nombrejuego+".txt", "a+")
+        archivo = open(nombrejuego+".txt", "a+")
         #for key, value in self.listaJuegos.items():
         name = nombrejuego
         url = self.listaJuegos[nombrejuego]
@@ -67,13 +67,18 @@ class Server:
         plt.ylabel('Precios')
         plt.savefig(nombrejuego+'.png')
         plt.clf()
+        nombrejuego += str(".png")
+        #Bucle de espera ocupada
+        while(fileexist(nombrejuego) == False):
+            pass
+        uploadfile(nombrejuego)
 
 
 def main():
     principal = Server()
     #Descarga en el fichero los juegos scrapeados
 
-    cnx = principal.conexion("localhost")
+    cnx = principal.conexion(principal.sservidor)
     channel = cnx.channel()
     channel.queue_declare(queue='payload')
 

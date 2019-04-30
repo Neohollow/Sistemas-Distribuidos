@@ -5,12 +5,14 @@ from tkinter import *
 # Opciones disponibles que el cliente pueda seleccionar
 OPTIONS = ["vampire Bloodline 2", "sekiro", "the division 2"]
 
+#Iniciamos sesión con Google
+
 # Aqui cargaremos toda la interfaz grafica.
 top = Tk()
 top.title = "Cliente"
 top.geometry("100x100")
 
-# Add a grid
+# Añadimos una rejilla
 mainframe = Frame(top)
 mainframe.grid(column=0, row=0, sticky=(N, W, E, S))
 mainframe.columnconfigure(0, weight=1)
@@ -25,7 +27,7 @@ Label(mainframe, text="Elige un juego").grid(row = 1, column = 1)
 popupMenu.grid(row=2, column=1)
 
 
-# on change dropdown value
+# Evento, cuando cambia el valor de la lista desplegable.
 def change_dropdown(*args):
     sjuego = tkvar.get()
     connection = pika.BlockingConnection(
